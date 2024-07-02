@@ -1,0 +1,159 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-header {
+    text-align: center;
+    margin: 0;
+    padding: 12px 0px;
+    background-color: #4047F0;
+    color: white;
+}
+
+#main-body {
+    flex-grow: 1;
+    display: flex;
+    border: 1px solid rgb(179, 179, 179);
+}
+
+#left-div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgb(179, 179, 179);
+    padding: 16px 0px;
+}
+
+#left-header {
+    color: #4047F0;
+}
+
+#details-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+#details-form span {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    top: 25%;
+    left: 12px
+}
+
+#details-form input {
+    width: 180px;
+    padding: 8px 8px;
+    padding-left: 34px;
+    border-radius: 8px;
+    border: 1px solid rgb(179, 179, 179);
+    font-size: 20px
+}
+
+#details-form label {
+    padding-top: 12px;
+    font-weight: bolder;
+}
+
+#details-form #image-input {
+    border: none;
+    width: auto;
+    font-size: 16px;
+    padding: 0;
+    border-radius: 0;
+}
+
+#details-form #image-input-preview {
+    height: 70px;
+    width: 60px;
+}
+
+#generate-button {
+    font-weight: bolder;
+    margin-top: 12px;
+    padding: 8px;
+    width: fit-content;
+    border-radius: 8px;
+    border: none;
+    background-color: #4047F0;
+    color: white;
+    font-size: 18px;
+}
+
+#right-div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+#id-card {
+    display: flex;
+    width: 420px;
+    height: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#id-card-photo-div {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4047F0;
+    background: linear-gradient(to top, #4047F0, #8f94fb);
+}
+
+#id-card-image {
+    background-color: white;
+    height: 110px;
+    width: 100px;
+    border-radius: 28px;
+    text-align: center;
+}
+
+#id-card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    gap: 12px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    flex-grow: 1;
+}
+
+#id-card-details p {
+    margin: 0;
+}
+
+.pre {
+    color: #bdc1c5;
+    font-weight: bold;
+}
+
+.out {
+    font-weight: bold;
+}
+
+.pre, .out {
+    font-size: 16px;
+}

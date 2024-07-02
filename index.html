@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Generator</title>
+    <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+    <script src="index.js" defer></script>
+    <div class="main-div">
+        <h2 id="main-header">ID Card Generator</h2>
+        <div id="main-body">
+            <div id="left-div">
+                <form id="details-form">
+                    <h2 id="left-header">Enter Student Details</h2>
+                    <label>Enter Name:</label>
+                    <span><img class="input-icon" src="./user-solid.svg" height="18"><input type="text" id="name-input"/></span>
+                    <label>Enter College Name:</label>
+                    <span><img class="input-icon" src="./landmark-solid.svg" height="18"><input type="text" id="college-input"/></span>
+                    <label>Enter Location:</label>
+                    <span><img class="input-icon" src="./address-book-solid.svg" height="18"><input type="text" id="location-input"/></span>
+                    <label>Enter student's picture:</label>
+                    <input type="file" accept="image/*" id="image-input"/>
+                    <img src="" alt="none" id="image-input-preview">
+                    <button type="button" id="generate-button">Generate Card</button>
+                </form>
+            </div>
+            <div id="right-div">
+                <h2 id="right-header">Generated ID Card</h2>
+                <div id="id-card">
+                    <div id="id-card-photo-div">
+                        <img id="id-card-image" alt="image">
+                    </div>
+                    <div id="id-card-details">
+                        <p>
+                            <span class="pre" id="id-card-name-pre">Name: </span>
+                            <span class="out" id="id-card-name">Ramesh Dev</span>
+                        </p>
+                        <p>
+                            <span class="pre" id="id-card-college-pre">College Name: </span>
+                            <span class="out" id="id-card-college">I.I.T</span>
+                        </p>
+                        <p>
+                            <span class="pre" id="id-card-location-pre">Location: </span>
+                            <span class="out" id="id-card-location">Mumbai</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
